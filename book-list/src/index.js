@@ -1,6 +1,8 @@
 import React from "react";
 import ReactDom from "react-dom";
 
+import "./index.css";
+
 function BookList() {
   //could have multiple components of same type
   /*
