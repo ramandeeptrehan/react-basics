@@ -69,6 +69,8 @@ const Author = () => {
     Within that, values are key value, where values are Strings
 
     Also, JSX CSS rules takes precedence over index.css file styling for specific component.
+
+    In React, there are always multiple ways to do the same thing.
   */
   return (
     <h4 style={{ color: "#617d98", fontSize: "0.75rem", margiTop: "0.25rem" }}>
