@@ -59,7 +59,22 @@ const Title = () => {
 };
 
 const Author = () => {
-  return <h4>Steven Pressfield</h4>;
+  //return <h4>Steven Pressfield</h4>;
+  /*
+    JSX with CSS
+
+    style={} means JS code is being placed.
+    Another {} insider {} means object in JS code
+    You get this: {{}} //outer {} suggests it's JS code, internal {} suggests it's JS object used in JS code
+    Within that, values are key value, where values are Strings
+
+    Also, JSX CSS rules takes precedence over index.css file styling for specific component.
+  */
+  return (
+    <h4 style={{ color: "#617d98", fontSize: "0.75rem", margiTop: "0.25rem" }}>
+      Steven Pressfield
+    </h4>
+  );
 };
 
 ReactDom.render(<BookList />, document.getElementById("root"));
