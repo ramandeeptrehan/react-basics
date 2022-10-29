@@ -17,17 +17,32 @@ function BookList() {
   );
   */
   return (
-    <section>
+    <section className="booklist">
       <Book />
-      <Image />
-      <Title />
-      <Author />
+      <Book />
+      <Book />
+      <Book />
+      <Book />
+      <Book />
+      <Book />
+      <Book />
+      <Book />
+      <Book />
+      <Book />
+      <Book />
     </section>
   );
 }
 
 const Book = () => {
-  return <article>This is a book</article>;
+  return (
+    <article className="book">
+      <h2>This is a book</h2>
+      <Image />
+      <Title />
+      <Author />
+    </article>
+  );
 };
 
 const Image = () => {

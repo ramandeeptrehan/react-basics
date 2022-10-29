@@ -10,3 +10,34 @@ body {
   background: #f1f5f8;
   color: #222;
 }
+
+.booklist {
+  width: 90vw; /* vw means viewport width: 10vw is equivalent to occupying 10% of entire visible screen width  */
+  max-width: 1170px;
+  margin: 5rem auto;
+  display: grid;
+  gap: 2rem;
+}
+
+/*
+  Media queries can modify the appearance (and even behavior) or a website or app based on a matched set of conditions about the user’s device, browser or system settings.
+  https://css-tricks.com/a-complete-guide-to-css-media-queries/
+*/
+@media screen and (min-width: 768px) {
+  .booklist {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.book {
+  background: #fff;
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+}
+
+/*
+To give specific design to h1 tag within book className, use something like this
+*/
+.book h1 {
+  margin-top: 0.5rem;
+}
